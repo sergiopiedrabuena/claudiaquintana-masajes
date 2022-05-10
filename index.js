@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $( "body" ).slideDown( );
     $("body").queryLoader2({
         barColor: "orange",
         backgroundColor: "grey",
