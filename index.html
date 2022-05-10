@@ -13,116 +13,142 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--FONT DE GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Oleo+Script+Swash+Caps&family=Timmana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Oleo+Script+Swash+Caps&family=Timmana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
 <body>
-  <!--Este fragmento de codigo es la portada y primera parte del portafolio-->
-<div id="cajaPortada" class="container-fluid me-0 ms-0 ps-0 pe-0">
-  <!--Navegable fixed absolute z-index 2 -->
-  <div class="row me-0 ms-0 ps-0 pe-0 ">
-      <div class="col-12 me-0 ms-0 ps-0 pe-0" style="background: black; height: 6vh; position: fixed; z-index:2; box-shadow: rgba(253, 252, 252, 0.2) 0px 5px 10px, rgba(253, 252, 252, 0.2) 0px 5px 10px; opacity: 0.9;">
-          <nav id="nav" class="p-0 m-0 navbar navbar-expand-lg navbar-light text-white">
-              <div>
-                <ul class="navbar-nav" style="display:flex; flex-direction: row;">
-                  <li class="nav-item active">
-                    <a class="fs-2 nav-link text-white ms-4" href="#">Inicio <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="fs-2 nav-link text-white ms-4" href="#cajaResumen">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="fs-2 nav-link text-white ms-4" href="#cajaContenido">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="fs-2 nav-link text-white ms-4" href="#cajaContacto">Contacto</a>
-                    </li>
-                </ul>
-              </div>
-          </nav>
+<!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed; width: 100%; z-index: 2; opacity: 0.95;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span> Menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="position:relative">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-weight: 200;"><b>Inicio</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cajaResumen">Turnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cajaContenido">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cajaContacto">Contacto</a>
+          </li>
+        </ul>
       </div>
-  </div>
-  
-  <div class="row me-0 ms-0 ps-0 pe-0">
-      <!--Caja contenedora de titulo con opacidad 100%-->
-      <div id="cajaTextoPortada" class="text-center col-12 me-0 ms-0 ps-0 pe-0">
-          <h1 id="titulo" class="text-white d-flex justify-content-center pt-5" style="font-family: 'Oleo Script Swash Caps', cursive;">Claudia Quintana <br> Masajes <br>
-      </div>
-      <!--Fondo negro con opacidad al 50%-->
-      <div id="fondoTextoPortada" class="bg-black col-12 me-0 ms-0 ps-0 pe-0" style="opacity: 0.6;">
-      </div>
-  </div>
-</div>
-<!--Este fragmento corresponde a resumen-->
+    </div>
+  </nav>
+<!--FIN BARRA DE NAVEGACION-->
+    
+<!--Este fragmento de codigo es la PORTADA y primera parte del portafolio-->
+    <div id="cajaPortada" class="container-fluid me-0 ms-0 ps-0 pe-0">
+        <div class="row me-0 ms-0 ps-0 pe-0">
+            <!--Caja contenedora de titulo con opacidad 100%-->
+            <div id="cajaTextoPortada" class="text-center col-12 me-0 ms-0 ps-0 pe-0">
+                <h1 id="titulo" class="text-white d-flex justify-content-center pt-5" style="font-family: 'Oleo Script Swash Caps', cursive;">Claudia Quintana Masajes</h1>
+            </div>
+            <!--Fondo negro con opacidad al 50%-->
+            <div id="fondoTextoPortada" class="bg-black col-12 me-0 ms-0 ps-0 pe-0" style="opacity: 0.6;">
+            </div>
+        </div>
+    </div>
+<!-- FIN PORTADA -->
 
-<div id="cajaResumen" class="container-fluid me-0 ms-0 ps-0 pe-0 border-bottom border-2 border-grey" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;">
-  <div class="row me-0 ms-0 ps-0 pe-0">
-      <!--Texto-->
-      <div class="col-12 text-center pt-5" >
-          <h1 style="font-family: 'Fondamento', cursive; font-family: 'Oleo Script Swash Caps', cursive; font-size: calc(2.8em + 1.2vw); text-shadow: 1px 1px 2px grey;">Solicite su turno</h1>
-      </div>
-  </div>
-  <div class="row d-flex text-center justify-content-center me-0 ms-0 ps-0 pe-0">
-      <div class="col-10 text-center">
-          <a target='_blank' href="https://wa.link/a7wx2o"><button id="button" class="btn btn-success" type="button"><h1>Obtener TURNO</h1></button></a>
-      </div>
-  </div>
-  <div class="row d-flex text-center justify-content-center me-0 ms-0 ps-0 pe-0">
-      <div class="col-10 p-3">
-          <h2 style="font-family: 'Fondamento', cursive;
-          font-family: 'Oleo Script Swash Caps', cursive;
-          font-family: 'Timmana', sans-serif; font-size: calc(2em + 1vw); text-shadow: 1px 1px 2px grey;">Consulte sin cargo por los diferentes tipos de masajes disponibles, asi como tambien los horarios y dias.</h2>
-      </div>
-  </div>
-  
-</div>
-<!--Este fragmento corresponde a contenido-->
-<div id="cajaContenido" class="container-fluid me-0 ms-0 ps-0 pe-0">
-  <div class="row me-0 ms-0 ps-0 pe-0 pb-2 pt-4">
-      <div class="text-white col-sm-12 col-md-6 me-0 ms-0 ps-2 pe-2 text-center" style="text-shadow: black 2px 2px;">
-          <h1>Masajes descontracturantes</h1>
-          <h2>Un masaje descontracturante es un tipo de masaje que tiene como objetivo liberar los músculos y las articulaciones para ayudarlos a funcionar en su nivel óptimo. El propósito del masaje es relajar y aflojar los músculos rígidos y tensos.</h2>
-      </div>
-      <div class="col-sm-12 col-md-6 me-0 ms-0 ps-0 pe-0 text-center">
-          <img id="contenido2" class="rounded" src="https://bl3301files.storage.live.com/y4mujgydeMjwTCgfkFDhUM3bBx_fFVmkKMeXmuobB8-6XZMKLJP6m7ubIGUSJNGhwKvaPlYaX7BtyHzxUzOr0ptSx4nui9CSrMe7aHDAl5gZMbWMktWCsRKPOvEXvKuG-Yq5zcfGIIPUkA216R9oMFTskY_96GWBJ1iDDF4t-GQSirjUyWDw0XkLqoTC0ip71bc?width=3508&height=2480&cropmode=none" width="95%">
-      </div>
-  </div>
-  <div class="row me-0 ms-0 ps-0 pe-0 d-flex d-md-none justify-content-center">
-      <div class="col-12 me-0 ms-0 ps-0 pe-0">            
-          <img src="https://bl3301files.storage.live.com/y4mYOnmhPPJWNxUIeFoGa0CP0Ymn1I6WSEYWb3_H_74tQG8thi3S2bDvIiEv-KOvaFD9DPW86hRzt01Y6hHlQADJhMQWeZMOXEtmcLbUj_31SeIP17Nvb_EK6mOrx_-x8kXQEuKmMyxwLawxeOB6R9JVNSxKrUoThzRjq0EFrb1MPe-ePNp5ac5QiEALl_UHf1h?width=593&height=48&cropmode=none" width="100%" height="100%">
-      </div>
-  </div>
-  <div class="row me-0 ms-0 ps-0 pe-0 pb-5 pt-2" style="box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;">
-      <div class="col-sm-12 col-md-6 me-0 ms-0 ps-0 pe-0 text-center">
-          <img id="contenido1" class="rounded" src="https://bl3301files.storage.live.com/y4mNBtl5HDZ8Cw8Dx4LvX9-x3Ll430v6TsEU1_JgMaT-ouiWAkeweGPjlOTZD3zsBYQxnoUp4Q_21nnl9i7OcI2WrRLjSF4w-l-w7RBnSyo23TJv8q-DQX0-eQGoyU0mw1Nf8CkKErs4bFh-5GhtK7KQIuRjhDGJHjZ9VZm9-n4CirPL6jEZHLLDkBKFeKUVHLa?width=5472&height=3648&cropmode=none" width="95%">
-      </div>
-      <div class="text-white col-sm-12 col-md-6 me-0 ms-0 ps-2 pe-2 text-center" style="text-shadow: black 2px 2px;">
-          <h1>Masajes relajantes</h1>
-          <h2>En el Masaje Relajante, el objetivo principal es aliviar la tensión y conseguir un estado mental de relajación, priorizando las manipulaciones y los pases suaves por encima de los movimientos bruscos y fuertes, más reservados para el masaje terapéutico o el descontracturante.</h2>
-      </div>
-  </div>
-</div>
-<!--Este fragmento corresponde a contacto-->
-<div id="cajaContacto" class="container-fluid bg-black text-white me-0 ms-0 ps-0 pe-0">
-  <div class="row me-0 ms-0 ps-0 pe-0">
-      <div class="col-12 text-center justify-content-center">
-          <h1>Contacto</h1>
-      </div>
-  </div>
-  <div class="row me-0 ms-0 ps-0 pe-0">
-      <div class="col-12 text-center justify-content-center">
-          <h3>Dejenos un mensaje y le responderemos a la brevedad.</h3>
-      </div>
-  </div>
-  <div class="row me-0 ms-0 ps-0 pe-0">
-      <div class="col-12 text-center justify-content-center">
-          <a target="_blank" href="https://wa.link/a7wx2o"><img class="m-3" src="https://bl3301files.storage.live.com/y4mASz1HMn6sMbZlqPaA0aZa1q00QZPIFf2X5AxP_38AEkXnpEjtuSC7KS53aUM_YyfU7KEpWdnraUhEMmn6YXiOqNsV5og3Gg9a3rpei8s_TfuzEHTvsQyTH2RGuFShXaZHURaNURdo2aUYgJEVsOdiWEN39c8EbUI3tQmveRBnRQ17MNo1PyPuuIA1yrtKhcq?width=256&height=256&cropmode=none" width="80px"></a>
-          <a target="_blank" href="https://www.instagram.com/mariaclaudia.quintana/"><img class="m-3" src="https://bl3301files.storage.live.com/y4moIl_4pZsjzQnj_jwcoe-jojcyGm7SmmNM0QPYU16327NntXGY1Gwjq7TCanw_VJ944hwyEtemq1LCUywnWnr-iqdbDB3M28HXitTWMRtTZ6zyRGOSRA11wO204ZdK1uyHzBescKzN5f63tZw22f7ipSHORn8qUAjQS6_8zPEMIP8M-0Cf0J1eg-gflXLJEPk?width=660&height=660&cropmode=none" width="80px"></a>
-      </div>
-  </div>
+<!-- RESUMEN --> 
+    <div id="cajaResumen" class="container-fluid me-0 ms-0 ps-0 pe-0 border-bottom border-2 border-grey"
+        style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;">
+        <div class="row me-0 ms-0 ps-0 pe-0">
+            <!--Texto-->
+            <div class="col-12 text-center pt-5">
+                <h1
+                    style="font-family: 'Fondamento', cursive; font-family: 'Oleo Script Swash Caps', cursive; font-size: calc(2.8em + 1.2vw); text-shadow: 1px 1px 2px grey;">
+                    Solicite su turno</h1>
+            </div>
+        </div>
+        <div class="row d-flex text-center justify-content-center me-0 ms-0 ps-0 pe-0">
+            <div class="col-10 text-center">
+                <a target='_blank' href="https://wa.link/a7wx2o"><button id="button" class="btn btn-success" type="button">
+                        <h1>Obtener TURNO</h1>
+                    </button></a>
+            </div>
+        </div>
+        <div class="row d-flex text-center justify-content-center me-0 ms-0 ps-0 pe-0">
+            <div class="col-10 p-3">
+                <h2 style="font-family: 'Fondamento', cursive;
+                font-family: 'Oleo Script Swash Caps', cursive;
+                font-family: 'Timmana', sans-serif; font-size: calc(2em + 1vw); text-shadow: 1px 1px 2px grey;">Consulte
+                    sin cargo por los diferentes tipos de masajes disponibles, asi como tambien los horarios y dias.</h2>
+            </div>
+        </div>
+    </div>
+<!-- FIN RESUMEN -->    
 
-
+<!--CONTENIDO-->
+    <div id="cajaContenido" class="container-fluid me-0 ms-0 ps-0 pe-0">
+        <div id="fondoContenido" class="container-fluid me-0 ms-0 ps-0 pe-0 pt-4">
+            <div class="row me-0 ms-0 ps-0 pe-0 pb-2 pt-4" style="font-family: 'Roboto Condensed', sans-serif;">
+                <div class="text-white col-sm-12 col-md-6 me-0 ms-0 ps-2 pe-2 text-center"
+                    style="text-shadow: black 2px 2px;">
+                    <h1 id="tituloContenido1">MASAJES DESCONTRACTURANTES</h1>
+                    <h2>Un masaje descontracturante es un tipo de masaje que tiene como objetivo liberar los músculos y las
+                        articulaciones para ayudarlos a funcionar en su nivel óptimo. El propósito del masaje es relajar y
+                        aflojar los músculos rígidos y tensos.</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 me-0 ms-0 ps-0 pe-0 text-center">
+                    <img id="contenido2" class="rounded"
+                        src="https://bl3301files.storage.live.com/y4mujgydeMjwTCgfkFDhUM3bBx_fFVmkKMeXmuobB8-6XZMKLJP6m7ubIGUSJNGhwKvaPlYaX7BtyHzxUzOr0ptSx4nui9CSrMe7aHDAl5gZMbWMktWCsRKPOvEXvKuG-Yq5zcfGIIPUkA216R9oMFTskY_96GWBJ1iDDF4t-GQSirjUyWDw0XkLqoTC0ip71bc?width=3508&height=2480&cropmode=none"
+                        width="95%">
+                </div>
+            </div>
+            <div class="row me-0 ms-0 ps-0 pe-0 d-flex d-md-none justify-content-center">
+                <div class="col-12 me-0 ms-0 ps-0 pe-0">
+                    <img src="https://bl3301files.storage.live.com/y4mYOnmhPPJWNxUIeFoGa0CP0Ymn1I6WSEYWb3_H_74tQG8thi3S2bDvIiEv-KOvaFD9DPW86hRzt01Y6hHlQADJhMQWeZMOXEtmcLbUj_31SeIP17Nvb_EK6mOrx_-x8kXQEuKmMyxwLawxeOB6R9JVNSxKrUoThzRjq0EFrb1MPe-ePNp5ac5QiEALl_UHf1h?width=593&height=48&cropmode=none"
+                        width="100%" height="100%">
+                </div>
+            </div>
+            <div class="row me-0 ms-0 ps-0 pe-0 pb-5 pt-2"
+                style="box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;">
+                <div class="col-sm-12 col-md-6 me-0 ms-0 ps-0 pe-0 text-center">
+                    <img id="contenido1" class="rounded"
+                        src="https://bl3301files.storage.live.com/y4mNBtl5HDZ8Cw8Dx4LvX9-x3Ll430v6TsEU1_JgMaT-ouiWAkeweGPjlOTZD3zsBYQxnoUp4Q_21nnl9i7OcI2WrRLjSF4w-l-w7RBnSyo23TJv8q-DQX0-eQGoyU0mw1Nf8CkKErs4bFh-5GhtK7KQIuRjhDGJHjZ9VZm9-n4CirPL6jEZHLLDkBKFeKUVHLa?width=5472&height=3648&cropmode=none"
+                        width="95%">
+                </div>
+                <div class="text-white col-sm-12 col-md-6 me-0 ms-0 ps-2 pe-2 text-center" style="font-family: 'Roboto Condensed', sans-serif; text-shadow: black 2px 2px;">
+                    <h1 id="tituloContenido2">MASAJES RELAJATES</h1>
+                    <h2>En el Masaje Relajante, el objetivo principal es aliviar la tensión y conseguir un estado mental de
+                        relajación, priorizando las manipulaciones y los pases suaves por encima de los movimientos bruscos
+                        y fuertes, más reservados para el masaje terapéutico o el descontracturante.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- FIN CONTENIDO-->
+    
+<!-- CONTACTO -->
+    <div id="cajaContacto" class="container-fluid bg-black text-white me-0 ms-0 ps-0 pe-0">
+        <div class="row me-0 ms-0 ps-0 pe-0">
+            <div class="col-12 text-center justify-content-center">
+                <h1>Contacto</h1>
+            </div>
+        </div>
+        <div class="row me-0 ms-0 ps-0 pe-0">
+            <div class="col-12 text-center justify-content-center">
+                <h3>Dejenos un mensaje y le responderemos a la brevedad.</h3>
+            </div>
+        </div>
+        <div class="row me-0 ms-0 ps-0 pe-0">
+            <div class="col-12 text-center justify-content-center">
+                <a target="_blank" href="https://wa.link/a7wx2o"><img class="m-3" src="https://bl3301files.storage.live.com/y4mASz1HMn6sMbZlqPaA0aZa1q00QZPIFf2X5AxP_38AEkXnpEjtuSC7KS53aUM_YyfU7KEpWdnraUhEMmn6YXiOqNsV5og3Gg9a3rpei8s_TfuzEHTvsQyTH2RGuFShXaZHURaNURdo2aUYgJEVsOdiWEN39c8EbUI3tQmveRBnRQ17MNo1PyPuuIA1yrtKhcq?width=256&height=256&cropmode=none" width="80px"></a>
+                <a target="_blank" href="https://www.instagram.com/mariaclaudia.quintana/"><img class="m-3" src="https://bl3301files.storage.live.com/y4moIl_4pZsjzQnj_jwcoe-jojcyGm7SmmNM0QPYU16327NntXGY1Gwjq7TCanw_VJ944hwyEtemq1LCUywnWnr-iqdbDB3M28HXitTWMRtTZ6zyRGOSRA11wO204ZdK1uyHzBescKzN5f63tZw22f7ipSHORn8qUAjQS6_8zPEMIP8M-0Cf0J1eg-gflXLJEPk?width=660&height=660&cropmode=none" width="80px"></a>
+            </div>
+        </div>
+    </div>
+<!-- FIN CONTACTO -->
   
-</div>
 </body>
 <!--Jquey CDN-->
 <script
