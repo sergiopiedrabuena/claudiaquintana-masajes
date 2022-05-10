@@ -18,9 +18,10 @@
 #cajaTextoPortada{
 	z-index: 1;
 	opacity: 100%;
+	width: 100%;
 }
 #titulo{
-	font-size: calc(3.8em + 1.2vw);
+	font-size: calc(2em + 1.5vw);
 	font-weight: 500;
 	text-shadow: #CCC 1px 0 20px;
 }
@@ -50,4 +51,10 @@
 	background: url("https://bl3301files.storage.live.com/y4mujgydeMjwTCgfkFDhUM3bBx_fFVmkKMeXmuobB8-6XZMKLJP6m7ubIGUSJNGhwKvaPlYaX7BtyHzxUzOr0ptSx4nui9CSrMe7aHDAl5gZMbWMktWCsRKPOvEXvKuG-Yq5zcfGIIPUkA216R9oMFTskY_96GWBJ1iDDF4t-GQSirjUyWDw0XkLqoTC0ip71bc?width=3508&height=2480&cropmode=none");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+#fondoContenido{
+	background-color: rgba(0, 0, 0, 0.377);
+}
+#tituloContenido1, #tituloContenido2 {
+	font-size: calc(2em + 1.2vw);
 }
