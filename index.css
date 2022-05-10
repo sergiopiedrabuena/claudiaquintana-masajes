@@ -7,6 +7,17 @@
 	box-sizing: border-box;
 }
 
+/*PRELOAD*/
+#precarga {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 9999;
+  }
+
 /*PORTADA*/
 #cajaPortada{
 	background: url("https://bl3301files.storage.live.com/y4m1XSryykozPZqxiZc3eHdfTQSbtN_iJ5fl_dlSLVkOmI5ZKluAweIcqxwLNoyhot7KnXrWc_y8UIiOEEj4Eb-kX21IzRigKvyjy6ZxT9DS6rIaSn1lj4PeoPmhviyXi8-EtQAnseuJC7Cau2EnCJErFm49mOOg5QVee4H4JPOd4HlPKwNqkMuNq_v4rnzSQBI?width=6016&height=4016&cropmode=none");
