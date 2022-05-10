@@ -10,8 +10,9 @@ $(document).ready(function(){
       });
       
       function hidePreLoader() {
-        $("#precarga").hide();
+        $("#precarga").hide( 500 ).delay( 1800 );
       }
+      $( "body" ).slideUp( 300 ).delay( 500 ).fadeIn( 400 );
 
     //utilizar el heigth de pantalla del usuario para definir el height
     var height = $(window).height();
