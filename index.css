@@ -7,17 +7,6 @@
 	box-sizing: border-box;
 }
 
-/*PRELOAD*/
-#precarga {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fff;
-	z-index: 9999;
-  }
-
 /*PORTADA*/
 #cajaPortada{
 	background: url("https://bl3301files.storage.live.com/y4m1XSryykozPZqxiZc3eHdfTQSbtN_iJ5fl_dlSLVkOmI5ZKluAweIcqxwLNoyhot7KnXrWc_y8UIiOEEj4Eb-kX21IzRigKvyjy6ZxT9DS6rIaSn1lj4PeoPmhviyXi8-EtQAnseuJC7Cau2EnCJErFm49mOOg5QVee4H4JPOd4HlPKwNqkMuNq_v4rnzSQBI?width=6016&height=4016&cropmode=none");
@@ -32,11 +21,18 @@
 	width: 100%;
 }
 #titulo{
-	font-size: calc(2em + 1.5vw);
+	font-size: calc(3em + 1.8vw);
 	font-weight: 500;
 	text-shadow: #CCC 1px 0 20px;
+	font-family: 'Oleo Script Swash Caps', cursive;
+}
+#fondoTextoPortada{
+	opacity: 0.6;
 }
 /*RESUMEN*/
+#cajaResumen{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 #button{
 	width: 30vw;
 	padding: 5px;
@@ -49,7 +45,19 @@
 		50%{ width: 35vw}
 		100%{ width: 30vw}
 	}
-
+#textoResumen1{
+	font-family: 'Fondamento', cursive; 
+	font-family: 'Oleo Script Swash Caps', cursive; 
+	font-size: calc(2.8em + 1.2vw); 
+	text-shadow: 1px 1px 2px grey;
+}
+#textoResumen2{
+	font-family: 'Fondamento', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Timmana', sans-serif; 
+	font-size: calc(2em + 1vw); 
+	text-shadow: 1px 1px 2px grey;
+}
 
 /*CONTENIDO*/
 #cajaContenido{
